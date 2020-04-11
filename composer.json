@@ -1,0 +1,12 @@
+{
+    "name": "mateus/style-mail",
+    "require": {
+        "phpmailer/phpmailer": "^6.1"
+    },
+    "license": "GNU General Public License v3.0",
+    "authors": [
+        {
+            "name": "Mateus Pereira"
+        }
+    ]
+}
