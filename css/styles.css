@@ -25,7 +25,7 @@
    with position:fixed. Width, height, top and left speak
    for themselves. Background we set to 80% white with
    our animation centered, and no-repeating */
-.modal {
+.loading-modal {
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -43,7 +43,7 @@
 
 /* When the body has the loading class, we turn
    the scrollbar off with overflow:hidden */
-body.loading .modal {
+body.active-loading .loading-modal {
     display: block;
     overflow: hidden;
 }

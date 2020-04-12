@@ -55,7 +55,7 @@ try {
     $mail->AltBody = $mensagem;
 
     $mail->send();
-    echo 'Mensagem foi enviada';
+    echo 'Mensagem foi enviada.';
 } catch (Exception $e) {
-    echo "Mensagem não pôde ser enviada. Erro: {$mail->ErrorInfo}";
+    echo "Mensagem não pôde ser enviada.";
 }
