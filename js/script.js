@@ -57,7 +57,7 @@ $('#botao-submit').bind('click', function(e){
                 $('#corpo_modal').html('Mensagem enviada com sucesso!');
             }else{
                 $('#titulo_modal').html('Ah, não!');
-                $('#corpo_modal').html('Não foi possível enviar a mensagem. Verifique se o seu endereço de e-mail é suportado e tente novamente.');
+                $('#corpo_modal').html('Não foi possível enviar a mensagem. Verifique se o seu endereço de e-mail é suportado e caso seja suportado, forneça permissão de acesso ao nosso sistema a partir da sua caixa de entrada e tente novamente.');
             }
 
             $('body').removeClass("active-loading")
