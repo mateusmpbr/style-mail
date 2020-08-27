@@ -1,29 +1,45 @@
 var myEditor;
 
 ClassicEditor
-    .create( document.querySelector( '#editor' ),{
-        toolbar: [
-            'heading', '|',
-            'bold', 'italic', 'link', 'bulletedList', 'numberedList', '|',
-            'indent','outdent', '|',
-            'mediaEmbed', 'undo', 'redo'
-        ],
-        heading: {
-            options: [
-                { model: 'paragraph', title: 'Parágrafo', class: 'ck-heading_paragraph' },
-                { model: 'heading1', view: 'h1', title: 'Título 1', class: 'ck-heading_heading1' },
-                { model: 'heading2', view: 'h2', title: 'Título 2', class: 'ck-heading_heading2' }
-            ]
-        }
-    } )
-    .then( editor => {
-        console.log( 'Editor was initialized', editor );
-        myEditor = editor;
-    } )
-    .catch( err => {
-        console.error( err.stack );
-    } );
-
+.create( document.querySelector( '#editor' ), {
+    toolbar: {
+        items: [
+            'heading',
+            '|',
+            'bold',
+            'italic',
+            'link',
+            'bulletedList',
+            'numberedList',
+            '|',
+            'indent',
+            'outdent',
+            'alignment',
+            '|',
+            'blockQuote',
+            'insertTable',
+            'mediaEmbed',
+            'undo',
+            'redo'
+        ]
+    },
+    language: 'pt-br',
+    table: {
+        contentToolbar: [
+            'tableColumn',
+            'tableRow',
+            'mergeTableCells'
+        ]
+    },
+} )
+.then( editor => {
+    // Tentar tirar window.editor
+    window.editor = editor;
+    myEditor = editor;
+} )
+.catch( error => {
+    console.error( error );
+} );
 
 $('#botao-submit').bind('click', function(e){
     
