@@ -66,7 +66,7 @@ $('#botao-submit').bind('click', function(e){
             
             var response = xhr.responseText;
             
-            console.log(response);
+            console.log("Response => " + response);
 
             if(response && response == 'No Exception'){
                 $('#titulo_modal').html('Tudo certo!');

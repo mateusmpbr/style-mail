@@ -57,5 +57,5 @@ try {
     $mail->send();
     echo 'No Exception';
 } catch (Exception $e) {
-    echo 'Exception';
+    echo $e->getMessage();
 }
