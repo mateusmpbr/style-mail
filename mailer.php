@@ -29,7 +29,7 @@ try {
     $mail->setLanguage('br');
     $mail->CharSet = 'utf-8';
     
-    $mail->Host       = 'smtp-mail.outlook.com';                    // Set the SMTP server to send through
+    $mail->Host       = 'smtp.office365.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = $email_remetente;                     // SMTP username
     $mail->Password   = $senha_remetente;                               // SMTP password
