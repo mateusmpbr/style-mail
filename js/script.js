@@ -68,7 +68,7 @@ $('#botao-submit').bind('click', function(e){
             
             console.log(response);
 
-            if(response && response != "Mensagem não pôde ser enviada."){
+            if(response && response == 'No Exception'){
                 $('#titulo_modal').html('Tudo certo!');
                 $('#corpo_modal').html('Mensagem enviada com sucesso!');
             }else{
